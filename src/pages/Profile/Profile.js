@@ -18,7 +18,7 @@ const Profile = props => {
   const handleSubmit = e => {
     e.preventDefault();
     const { year, college, department } = e.target.elements;
-    updateUserData(currentUser.uid, year.value + yearSuffix[year.value-1], department.value, college.value);
+    updateUserData(currentUser.uid, year.value + yearSuffix[year.value], department.value, college.value);
     notification['success']({
       message: 'Success!',
       description: 'Your profile has been updated!',
